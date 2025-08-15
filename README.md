@@ -98,15 +98,15 @@ git push origin main
 
 ```mermaid
 graph TD
-    A[Issue作成] --> B[TODO-issue-{番号}.md作成]
-    B --> C[作業分解・記述]
-    C --> D[開発作業]
-    D --> E[進捗更新]
-    E --> F{作業完了?}
+    A["Issue作成"] --> B["TODO-issue-{番号}.md作成"]
+    B --> C["作業分解・記述"]
+    C --> D["開発作業"]
+    D --> E["進捗更新"]
+    E --> F{"作業完了?"}
     F -->|No| D
-    F -->|Yes| G[Issueクローズ]
-    G --> H[TODOファイル削除]
-    H --> I[完了]
+    F -->|Yes| G["Issueクローズ"]
+    G --> H["TODOファイル削除"]
+    H --> I["完了"]
 ```
 
 ## テンプレート
