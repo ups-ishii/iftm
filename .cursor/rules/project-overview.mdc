@@ -1,0 +1,19 @@
+---
+alwaysApply: true
+---
+
+# IFTM Project Overview
+TODO
+
+## Project Description
+TODO
+
+## Project Structure
+TODO
+
+## Development Workflow
+- Use appropriate testing frameworks for each language
+- Follow established naming conventions
+- Maintain code quality with linting tools
+- Write clear documentation and comments
+- Use proper import patterns for each context

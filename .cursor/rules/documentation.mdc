@@ -1,0 +1,28 @@
+---
+description: Documentation and Comments Rules
+alwaysApply: true
+---
+
+# Documentation and Comments Rules
+
+## Language Requirements
+- All docstrings must be written in English
+- All code comments must be written in English
+- Use clear, descriptive English for all documentation
+- **All Project Rules files (*.mdc) must be written in English**
+
+## Project Rules Files (*.mdc)
+- All Project Rules files must be written in English
+- Use clear, descriptive language for rule definitions
+- Follow consistent formatting and structure
+- Include examples when helpful for clarity
+- Maintain professional and technical writing standards
+
+## General Documentation Standards
+- Write self-documenting code with clear variable and function names
+- Add comments for complex logic or business rules
+- Keep documentation up to date with code changes
+- Use consistent formatting and style across all documentation
+
+- Keep documentation up to date with code changes
+- Use consistent formatting and style across all documentation

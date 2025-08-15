@@ -1,0 +1,128 @@
+---
+description: Issue-Focused TODO Management (IFTM) Comprehensive Rules
+alwaysApply: false
+---
+
+# IFTM (Issue-Focused TODO Management) Rules
+
+## Overview
+
+IFTM is a methodology for creating and managing temporary TODO files for GitHub Issues to improve work efficiency in Cursor IDE.
+
+## Basic Concepts
+
+- **One Issue = One TODO File**: Each GitHub Issue corresponds to a single TODO file
+- **Temporary Existence**: TODO files are automatically deleted when Issues are completed
+- **Work Breakdown**: Complex Issues are decomposed into manageable steps
+- **Cursor-Optimized**: Designed specifically for IDE-based development workflows
+
+## File Naming Convention
+
+- TODO files must follow the pattern: `TODO-issue-{number}.md`
+- Place files in the project root directory
+- Issue numbers must be 3+ digits
+- Examples: `TODO-issue-123.md`, `TODO-issue-456.md`
+
+## File Structure Requirements
+
+Each TODO file must contain the following sections:
+
+- Issue title and number
+- Work breakdown (for Cursor)
+- Related files
+- Reference information
+- Progress status
+- Work notes
+
+## Template Example
+
+```markdown
+## [Issue #{number}] {title}
+
+### Work Breakdown (for Cursor)
+
+- [ ] 1. {task1}
+  - {detail1}
+  - {detail2}
+- [ ] 2. {task2}
+  - {detail1}
+  - {detail2}
+
+### Related Files
+
+- `{file_path1}`
+- `{file_path2}`
+
+### Reference Information
+
+- {reference1}
+- {reference2}
+
+### Progress Status
+
+- **Start Date**: {YYYY-MM-DD}
+- **Assignee**: @{username}
+- **Priority**: {High/Medium/Low}
+- **Current Work**: {work_description}
+
+### Work Notes
+
+**{YYYY-MM-DD}**
+
+- {note1}
+- {note2}
+
+**{YYYY-MM-DD}**
+
+- {note1}
+- {note2}
+
+## Commit Message Format
+
+- Format: `type: description - Issue #{number}`
+- Always include the Issue number
+- Document TODO file updates when relevant
+- Examples:
+  - `feat: implement image quality improvement - Issue #123`
+  - `docs: update TODO-issue-123.md progress - Issue #123`
+  - `docs: Issue #123 completed - remove TODO file`
+
+## File Management Workflow
+
+- **Creation**: When Issue is created
+- **Updates**: With each progress milestone
+- **Deletion**: When Issue is completed
+- Recommended: GitHub Actions for automatic cleanup
+
+## Workflow Process
+
+1. Create TODO file when Issue is created
+2. Document work breakdown
+3. Execute development tasks
+4. Update progress and work notes
+5. Delete TODO file when Issue is completed
+
+## Important Considerations
+
+- File count management: Organize when many Issues are active
+- Avoid simultaneous editing: Manage by one person or restrict edit permissions
+- Regular cleanup: Verify old TODO files periodically
+
+## Use Cases
+
+- Complex Issues requiring work breakdown
+- Improving work efficiency in Cursor IDE
+- Emphasizing team work status sharing
+- Automating cleanup after Issue completion
+- Tracking decision-making process and technical insights
+
+## Implementation Guidelines
+
+- Keep TODO files concise and actionable
+- Use checkboxes for progress tracking
+- Include file paths in code blocks
+- Update progress status regularly
+- Document work notes with timestamps
+- Follow consistent formatting across all TODO files
+- Use work notes for technical decisions, challenges, and insights
+```
