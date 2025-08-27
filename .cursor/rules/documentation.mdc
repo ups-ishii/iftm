@@ -6,23 +6,74 @@ alwaysApply: true
 # Documentation and Comments Rules
 
 ## Language Requirements
+
 - All docstrings must be written in English
 - All code comments must be written in English
 - Use clear, descriptive English for all documentation
-- **All Project Rules files (*.mdc) must be written in English**
+- **All Project Rules files (\*.mdc) must be written in English**
 
-## Project Rules Files (*.mdc)
+## Python Documentation
+
+- Follow PEP 257 conventions for docstrings
+- Include type hints in docstrings when appropriate
+- Use proper English grammar and spelling in all documentation
+- Write comprehensive docstrings for all public functions and classes
+
+## Go Documentation
+
+- Follow Go documentation conventions
+- Write clear package and function documentation
+- Use proper English grammar and spelling
+- Include examples in documentation when helpful
+
+## Project Rules Files (\*.mdc)
+
 - All Project Rules files must be written in English
 - Use clear, descriptive language for rule definitions
 - Follow consistent formatting and structure
 - Include examples when helpful for clarity
 - Maintain professional and technical writing standards
+- When generating Cursor Project Rules, refer to the official documentation at https://docs.cursor.com/en/context/rules for best practices and guidelines
 
 ## General Documentation Standards
+
 - Write self-documenting code with clear variable and function names
 - Add comments for complex logic or business rules
 - Keep documentation up to date with code changes
 - Use consistent formatting and style across all documentation
 
-- Keep documentation up to date with code changes
-- Use consistent formatting and style across all documentation
+## Date and Time Recording Rules
+
+- **Always verify system time before recording dates**
+- Use the `date` command to get the current system time
+- Never manually estimate or guess dates
+- Record dates in ISO 8601 format (YYYY-MM-DD)
+- Include timezone information when relevant
+- Example format: `2025-08-27` or `2025-08-27 19:01:56 JST`
+
+### Date Recording Process
+
+1. **Verify system time**: Run `date` command to get current system time
+2. **Confirm accuracy**: Ensure system time is accurate and reliable
+3. **Record in standard format**: Use consistent date format throughout documentation
+4. **Include context**: Add relevant context about when the date was recorded
+
+### Examples
+
+```bash
+# Correct way to record dates
+$ date
+Wed Aug 27 19:01:56 JST 2025
+
+# Record in documentation
+- **Implementation Date**: 2025-08-27
+- **Last Updated**: 2025-08-27 19:01:56 JST
+```
+
+### Common Mistakes to Avoid
+
+- ❌ **Don't**: Manually estimate dates
+- ❌ **Don't**: Copy dates from other sources without verification
+- ✅ **Do**: Always verify with `date` command
+- ✅ **Do**: Use consistent ISO 8601 format
+- ✅ **Do**: Include timezone when relevant
